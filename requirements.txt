@@ -1,0 +1,14 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.12,<1
+torch>=2.3,<3
+torchvision>=0.18,<1
+ultralytics>=8.3,<9
+Pillow>=11.3,<13
+pillow-heif>=1.1,<2
+numpy>=1.26,<3
+opencv-python-headless>=4.10,<5
+
+# File summary: Standalone runtime packages for the HTTP API, image checks,
+# HEIC/HEIF/AVIF decoding, EfficientNet-B3, YOLO11m, and local CPU/CUDA
+# inference.

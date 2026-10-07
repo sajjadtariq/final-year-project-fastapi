@@ -1,0 +1,73 @@
+# Local Python runtimes and environments
+.venv/
+venv/
+env/
+.python312/
+.python*/
+.uv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python caches, tests, coverage, and builds
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Runtime state and logs
+runtime/
+logs/
+*.log
+*.pid
+*.tmp
+*.temp
+
+# All private model payloads and training artifacts; keep only their instructions
+models/*
+!models/README.md
+
+# Model/checkpoint formats outside models/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.engine
+*.tflite
+*.h5
+*.hdf5
+*.keras
+*.pb
+*.mlmodel
+*.joblib
+
+# Datasets, experiment trackers, and generated ML output
+/data/
+/datasets/
+/artifacts/
+/checkpoints/
+/outputs/
+/runs/
+/mlruns/
+/wandb/
+
+# Editors and operating-system metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# File summary: Keeps private models, datasets, environments, secrets, caches,
+# runtime state, experiment output, and other generated heavy files out of Git.

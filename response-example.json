@@ -1,0 +1,82 @@
+{
+  "assessment_id": "mel-001",
+  "status": "completed",
+  "created_at": "2026-10-05T19:11:50.365449Z",
+  "submitted_details": {
+    "body_area": "face",
+    "symptoms": "redness",
+    "duration": "1 week"
+  },
+  "image_quality": {
+    "accepted": true,
+    "original_width": 720,
+    "original_height": 464,
+    "file_size_bytes": 98274,
+    "detected_mime_type": "image/jpeg",
+    "brightness": 142.73654513888889,
+    "blur_score": 1011.6903997231457,
+    "focus_status": "acceptable",
+    "lighting_status": "acceptable",
+    "resolution_status": "acceptable",
+    "enhancement_applied": "none",
+    "warnings": []
+  },
+  "classification": {
+    "accepted": true,
+    "class_name": "melanoma",
+    "display_label": "Features consistent with melanoma",
+    "confidence": 0.9417092204093933,
+    "threshold_used": 0.6,
+    "probabilities": {
+      "nevus": 0.007297632750123739,
+      "melanoma": 0.9417092204093933,
+      "bcc": 0.008669352158904076,
+      "acne": 0.020674744620919228,
+      "eczema": 0.011884508654475212,
+      "psoriasis": 0.009764683432877064
+    }
+  },
+  "localization": {
+    "status": "regions_detected",
+    "supported": true,
+    "class_conflict_logged": false,
+    "displayed_region_count": 1,
+    "raw_detection_count": 1,
+    "detections": [
+      {
+        "confidence": 0.8906779289245605,
+        "box_normalized": [
+          0.22991390526294708,
+          0.06421253085136414,
+          0.6529776453971863,
+          0.711900532245636
+        ]
+      }
+    ],
+    "message": "Regions were detected and can be highlighted."
+  },
+  "decision": {
+    "result_type": "accepted",
+    "recommended_action": "urgent_dermatologist_review",
+    "review_priority": "as_soon_as_possible",
+    "action_label": "See a dermatologist as soon as possible",
+    "severity": null,
+    "title": "Features consistent with melanoma",
+    "explanation": "This image has features associated with melanoma. See a qualified dermatologist as soon as possible.",
+    "disclaimer": "This is an AI-assisted assessment, not a medical diagnosis."
+  },
+  "model_versions": {
+    "classifier": "20260904-163635-dca02d47",
+    "classifier_registry_version": "1",
+    "classifier_mlflow_run_id": "dca02d47dafb49a5a3ee0c406292a49c",
+    "detector": "yolo11m-skin-v1-baseline-aug",
+    "preprocessing": "quality-v1-384px",
+    "pipeline": "local-pipeline-v1"
+  },
+  "timings": {
+    "preprocessing_ms": 16.48090001253877,
+    "classifier_ms": 265.5577999976231,
+    "detector_ms": 398.76599999843165,
+    "total_ms": 681.0614999994868
+  }
+}
